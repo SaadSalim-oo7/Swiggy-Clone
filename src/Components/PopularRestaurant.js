@@ -6,14 +6,8 @@ function PopularRestaurant({popularRestaurants}) {
     <div className="col-10">
     <div style={{ textAlign: "center", marginTop : "30px"  }}>
     <h1>Popular Restaurants in Hyderabad</h1>
-    <input className="search-bar"
-    //   value={userSearch} 
-    //  onChange={(e) => {
-    //   setUserSearch(e.target.value)
-    //  }}
-    placeholder="Search Restaurants" />
   </div>
-  <div className="container mt-4">
+  <div className="container mt-5">
   <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4  border-0">
    {  popularRestaurants.map((item, i) => {
     return <Link to={`/restaurantMenu/${item.info.name}/${item.info.id}`}>
@@ -39,4 +33,4 @@ function PopularRestaurant({popularRestaurants}) {
   )
 }
 
-export default PopularRestaurant
+export default PopularRestaurant;

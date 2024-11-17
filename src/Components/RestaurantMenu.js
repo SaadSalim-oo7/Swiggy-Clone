@@ -33,14 +33,14 @@ function RestaurantMenu() {
                <b> {item.card.card.title} - {item.card.card.title.length}</b>
               </button>
             </h2>
-            <div id={`panelsStayOpen-collapse${i}`} class="accordion-collapse collapse show">
+            <div id={`panelsStayOpen-collapse${i}`} class="accordion-collapse collapse">
               <div class="accordion-body">
               { item.card.card.itemCards.map((item, i) => {
-                return  <div class="card mb-3" style={{ width : "max", height : "210px"}}> 
+                return  <div class="card mb-3 border-0" style={{ width : "max", height : "210px"}}> 
                 <div class="row">
-                <div class="col-md-2 border-0">
+                <div class="col-md-4">
                 <img
-                  style={{ height : "210px", width : "320px", borderRadius : "10px"}}
+                  style={{ height : "200px", width : "300px", borderRadius : "10px"}}
                   src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_292,h_300,c_fit/${item?.card?.info?.imageId}`}  class="img-fluid rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">

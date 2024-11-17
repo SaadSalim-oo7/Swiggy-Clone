@@ -10,8 +10,8 @@ function Header() {
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk50Ut-wJKwbca3BTPssDUl_fqnsEE_D2tcw&s"
       alt="Logo"
     /></Link>
-    <p>Search Restaurant</p>
-    <p>Search Dishes</p>
+    <Link to="/searchRestaurants"> <p>Search Restaurant</p></Link>
+    <Link to="/searchDishes"><p>Search Dishes</p></Link>
     <p>Cart</p>
   </div>
 

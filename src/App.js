@@ -4,7 +4,9 @@ import axios from 'axios';
 import Home from "./Home";
 import Header from "./Components/Header";
 import RestaurantMenu from "./Components/RestaurantMenu";
-import {BrowserRouter, Routes,Route } from "react-router-dom"
+import SearchRestaurant from "./Components/SearchRestaurant";
+import {BrowserRouter, Routes,Route } from "react-router-dom";
+import SearchDishes from "./Components/SearchDishes";
 
 
 
@@ -55,6 +57,8 @@ function App() {
         />}
         />
         <Route path="/restaurantMenu/:restName/:restId" element = {<RestaurantMenu/>}/>
+        <Route path="/searchRestaurants" element = {<SearchRestaurant/>}/>
+        <Route path="/searchDishes" element = {<SearchDishes/>}/>
       </Routes>
      </BrowserRouter>
     </>
